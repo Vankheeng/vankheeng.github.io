@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Van's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-controls">
+        <button id="theme-toggle" class="theme-btn">
+            <span class="sun-icon">☀️</span>
+            <span class="moon-icon">🌙</span>
+        </button>
+        <button id="sound-toggle" class="sound-btn">🔊</button>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="background">
+        <!-- Clouds -->
+        <img src="assets/cloud.png" alt="Cloud Image" class="cloud-image">
+        <!-- <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="cloud cloud3"></div> -->
+        
+        <!-- Sun/Moon -->
+        <div class="celestial-body">
+            <img src="assets/sun.png" alt="Sun" class="sun-image">
+            <!-- <div class="sun">☀️</div> -->
+            <div class="moon">🌙</div>
+        </div>
+        
+        <!-- Stars (night mode) -->
+        <div class="stars">
+            <div class="star star1">✨</div>
+            <div class="star star2">⭐</div>
+            <div class="star star3">✨</div>
+        </div>
+    </div>
+
+    <!-- Water and Landscape -->
+    <div class="landscape">
+        <div class="water">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+        </div>
+        <img src="assets/landscape.png" alt="Landscape Image" class="landscape-image">
+    </div>
+
+    <!-- Character -->
+    <div class="character">
+        <img src="assets/cute_duck.png" alt="Van's Avatar" class="avatar">
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content" id="main-content">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="card">
+                <h1>Hi! <span class="highlight">I'm Van</span></h1>
+                <p class="subtitle">I'm an AI Engineer</p>
+                
+                <nav class="navigation">
+                    <button class="nav-btn" data-page="about">
+                        <div class="nav-icon">ℹ️</div>
+                        <span>About</span>
+                    </button>
+                    <button class="nav-btn" data-page="links">
+                        <div class="nav-icon">🔗</div>
+                        <span>Links</span>
+                    </button>
+                    <button class="nav-btn" data-page="work">
+                        <div class="nav-icon">💼</div>
+                        <span>Work</span>
+                    </button>
+                    <button class="nav-btn" data-page="contact">
+                        <div class="nav-icon">📧</div>
+                        <span>Contact</span>
+                    </button>
+                </nav>
+            </div>
+        </section>
+
+       <!-- About Page -->
+        <section id="about" class="page">
+            <div class="card">
+                <button class="back-btn" data-page="home">←</button>
+                <div class="profile-section">
+                    <div class="avatar">
+                        <img src="assets/avatar.png" alt="Van's Avatar" class="avatar-image">
+                    </div>
+                    <h2>Nguyen Thi Khanh Van</h2>
+                    <p class="role">Information Technology Student</p>
+                </div>
+                <div class="about-content">
+                    <h3>AI Engineer Direction</h3>
+                    <p>With hands-on experience in machine learning, deep learning, and natural language processing, I enjoy building intelligent systems that solve real-world problems. I’ve worked with frameworks like TensorFlow and PyTorch, and I’m passionate about making AI more accessible and impactful.</p>
+                    
+                    <h3>Business Analyst Direction</h3>
+                    <p>Equipped with strong analytical thinking and communication skills, I excel at gathering requirements, analyzing data, and delivering insights that support business decisions. My background in IT and data gives me an edge in bridging the gap between business needs and technical solutions.</p>
+
+                    <div class="skills">
+                        <span class="skill">Python</span>
+                        <span class="skill">TensorFlow</span>
+                        <span class="skill">PyTorch</span>
+                        <span class="skill">Machine Learning</span>
+                        <span class="skill">NLP</span>
+                        <span class="skill">SQL</span>
+                        <span class="skill">Business Analysis</span>
+                        <span class="skill">Requirement Gathering</span>
+                        <span class="skill">Data Visualization</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Links Page -->
+        <section id="links" class="page">
+            <div class="card">
+                <button class="back-btn" data-page="home">←</button>
+                <h2>🔗 Links</h2>
+                <div class="social-links">
+                    <a href="https://github.com/Vankheeng" class="social-link" target="_blank">
+                        <img src="assets/github_logo.png" alt="Github Icon" class="social-icon">
+                        <span>Github</span>
+                    </a>
+                    <a href="https://www.facebook.com/van.kheeng/" class="social-link" target="_blank">
+                        <img src="assets/facebook_logo.png" alt="Facebook Icon" class="social-icon">
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com/van.kheeng/" class="social-link" target="_blank">
+                        <img src="assets/instagram_logo.jpg" alt="Instagram Icon" class="social-icon">
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Page -->
+        <section id="work" class="page">
+            <div class="card">
+                <button class="back-btn" data-page="home">←</button>
+                <h2>💼 Work</h2>
+                <div class="work-content">
+                    <div class="project">
+                        <h3>RAG-based Admissions Q&A Chatbot</h3>
+                        <p>Built a chatbot platform using Retrieval-Augmented Generation (RAG) with LangChain to answer university admissions questions. The system integrates MongoDB and ChromaDB for efficient document retrieval and uses Google's Gemini LLM for generating accurate, context-aware responses.</p>
+                        <div class="tech-stack">
+                            <span>LangChain</span>
+                            <span>MongoDB</span>
+                            <span>ChromaDB</span>
+                            <span>Gemini</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project">
+                        <h3>Malware Detection with GIN and Ensemble Learning</h3>
+                        <p>Developed a malware detection system by extracting structural features from permission graphs using Graph Isomorphism Network (GIN). Combined multiple classifiers (KNN, Random Forest, MLP, XGBoost) in an ensemble framework, using LightGBM as the meta-learner to enhance overall prediction accuracy.</p>
+                        <div class="tech-stack">
+                            <span>GIN</span>
+                            <span>PyTorch Geometric</span>
+                            <span>KNN</span>
+                            <span>Random Forest</span>
+                            <span>MLP</span>
+                            <span>XGBoost</span>
+                            <span>LightGBM</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project">
+                        <h3>Restaurant Website with VNPAY Integration and RAG Chatbot</h3>
+                        <p>Developed a full-stack restaurant website allowing users to browse menus, place orders, and make secure payments via VNPAY. Integrated a chatbot using Retrieval-Augmented Generation (RAG) to assist customers with questions related to the restaurant, services, and promotions.</p>
+                        <div class="tech-stack">
+                            <span>Node.js</span>
+                            <span>Vue.js</span>
+                            <span>MySQL</span>
+                            <span>VNPAY API</span>
+                            <span>LangChain</span>
+                            <span>RAG</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="page">
+            <div class="card">
+                <button class="back-btn" data-page="home">←</button>
+                <h2>Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> vanntkbcvt@gmail.com</p>
+                        <div class="contact-illustration">
+                            <img src="assets/google-mail.png" alt="Letter Icon" class="letter-img">
+                        </div>
+                    </div>
+                    <img src="assets/duck3.png" alt="contact-image" class="contact-image">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
