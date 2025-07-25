@@ -284,106 +284,6 @@
 
   }
   
-  /* Hills */
-  /* .hills {
-    position: absolute;
-    bottom: 35%;
-    left: 0;
-    width: 100%;
-    height: 65%;
-  }
-  
-  .hill {
-    position: absolute;
-    bottom: 0;
-    background: var(--hill-color);
-    border-radius: 50% 50% 0 0;
-  }
-  
-  .hill1 {
-    width: 300px;
-    height: 150px;
-    right: 0;
-    background: linear-gradient(135deg, var(--hill-color), #7cb342);
-  }
-  
-  .hill2 {
-    width: 250px;
-    height: 120px;
-    right: 200px;
-    background: linear-gradient(135deg, #7cb342, var(--hill-color));
-  }
-  
-  .hill3 {
-    width: 200px;
-    height: 100px;
-    right: 350px;
-    background: linear-gradient(135deg, var(--hill-color), #689f38);
-  }
-   */
-  /* Animated Grass */
-  /* .grass-container {
-    position: absolute;
-    bottom: 35%;
-    right: 0;
-    width: 100%;
-    height: 30px;
-    z-index: -1;
-  }
-  
-  .grass {
-    position: absolute;
-    width: 3px;
-    height: 20px;
-    background: var(--grass-color);
-    border-radius: 50% 50% 0 0;
-    transform-origin: bottom;
-    animation: grass-sway 3s ease-in-out infinite;
-  }
-  
-  .grass1 {
-    right: 50px;
-    height: 25px;
-    animation-delay: 0s;
-  }
-  
-  .grass2 {
-    right: 80px;
-    height: 20px;
-    animation-delay: 0.5s;
-  }
-  
-  .grass3 {
-    right: 120px;
-    height: 30px;
-    animation-delay: 1s;
-  }
-  
-  .grass4 {
-    right: 150px;
-    height: 18px;
-    animation-delay: 1.5s;
-  }
-  
-  .grass5 {
-    right: 200px;
-    height: 22px;
-    animation-delay: 2s;
-  } */
-  
-  /* @keyframes grass-sway {
-    0%,
-    100% {
-      transform: rotate(0deg);
-    }
-    25% {
-      transform: rotate(2deg);
-    }
-    75% {
-      transform: rotate(-2deg);
-    }
-  }
-   */
   /* Character */
   .character {
     position: fixed;
@@ -732,12 +632,6 @@
         animation: gentle-float 3s ease-in-out infinite;
     }
   
-  /* .letter,
-  .person {
-    font-size: 3rem;
-    animation: gentle-float 3s ease-in-out infinite;
-  } */
-  
   .person {
     animation-delay: 1.5s;
   }
@@ -749,48 +643,6 @@
     border-radius: 0; /* không bo tròn */
     box-shadow: none; /* không đổ bóng */
   }
-  
-  /* Contact Form */
-  /* .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    padding: 15px;
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.8);
-  }
-  
-  .contact-form input:focus,
-  .contact-form textarea:focus {
-    outline: none;
-    border-color: var(--highlight-color);
-    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
-  } */
-  
-  /* .contact-content button {
-    background: var(--highlight-color);
-    color: white;
-    border: none;
-    padding: 15px;
-    border-radius: 15px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .contact-content button:hover {
-    background: #45a049;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
-  } */
   
   /* Responsive Design */
   @media (max-width: 768px) {

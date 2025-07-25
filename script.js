@@ -124,42 +124,6 @@ document.querySelectorAll(".nav-btn, .social-link, .back-btn, .theme-btn, .sound
   })
 })
 
-// Contact Form Handling
-// const contactForm = document.querySelector(".contact-form")
-// if (contactForm) {
-//   contactForm.addEventListener("submit", (e) => {
-//     e.preventDefault()
-
-//     // Get form data
-//     const formData = new FormData(contactForm)
-//     const name = contactForm.querySelector('input[type="text"]').value
-//     const email = contactForm.querySelector('input[type="email"]').value
-//     const message = contactForm.querySelector("textarea").value
-
-//     // Simple validation
-//     if (!name || !email || !message) {
-//       alert("Please fill in all fields")
-//       return
-//     }
-
-//     // Simulate form submission
-//     const submitButton = contactForm.querySelector("button")
-//     const originalText = submitButton.textContent
-
-//     submitButton.textContent = "Sending..."
-//     submitButton.disabled = true
-
-//     setTimeout(() => {
-//       alert("Thank you for your message! I'll get back to you soon.")
-//       contactForm.reset()
-//       submitButton.textContent = originalText
-//       submitButton.disabled = false
-//       playSound("navigate")
-//     }, 2000)
-
-//     playSound("click")
-//   })
-// }
 
 // Parallax Effect for Background Elements
 window.addEventListener("scroll", () => {
